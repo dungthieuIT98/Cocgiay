@@ -1,0 +1,19 @@
+id,name,count,parentId
+all,Tất cả sản phẩm,16,
+ong-hut,Ống hút,2,
+ong-hut-giay,Ống hút giấy,2,ong-hut
+bat,Bát & tô,4,
+bat-giay,Bát giấy tô giấy,2,bat
+bat-nhua,Bát nhựa tô nhựa,2,bat
+chen,Chén,2,
+chen-giay,Chén giấy,1,chen
+chen-nhua,Chén nhựa,1,chen
+khay,Khay,4,
+khay-giay,Khay giấy,1,khay
+khay-nhua,Khay nhựa,1,khay
+khay-xop,Khay xốp,1,khay
+khay-nhom,Khay nhôm,1,khay
+hop,Hộp,4,
+hop-giay,Hộp giấy,2,hop
+hop-nhua,Hộp nhựa,1,hop
+hop-xop,Hộp xốp,1,hop

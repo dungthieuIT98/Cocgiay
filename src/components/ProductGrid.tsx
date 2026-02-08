@@ -8,21 +8,39 @@ interface ProductGridProps {
   onAddToCart: (product: Product) => void;
 }
 
+interface Category {
+  id: string;
+  name: string;
+  count: number;
+  parentId?: string;
+}
+
 export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps) {
   const [products, setProducts] = useState<Product[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
-    loadCSV<Product>('/data/products.csv').then(data => {
-      setProducts(data);
+    Promise.all([
+      loadCSV<Product>('/data/products.csv'),
+      loadCSV<Category>('/data/categories.csv')
+    ]).then(([productData, categoryData]) => {
+      setProducts(productData);
+      setCategories(categoryData);
       setLoading(false);
     });
   }, []);
 
-  const filteredProducts = selectedCategory === 'all' 
-    ? products 
-    : products.filter(p => p.category === selectedCategory);
+  const childCategoryIds = categories
+    .filter(category => category.parentId === selectedCategory)
+    .map(category => category.id);
+
+  const filteredProducts = selectedCategory === 'all'
+    ? products
+    : childCategoryIds.length > 0
+      ? products.filter(product => childCategoryIds.includes(product.category))
+      : products.filter(product => product.category === selectedCategory);
 
   if (loading) {
     return (
