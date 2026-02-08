@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { ChevronRight } from 'lucide-react';
+import { Banner } from '../components/Banner';
 
 const categories = [
   {
@@ -64,41 +65,75 @@ const categories = [
   },
 ];
 
+const mainBanners = [
+  {
+    url: 'https://images.unsplash.com/photo-1586574086326-f440257bc11b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwbGFzdGljJTIwY3VwcyUyMGZhY3RvcnklMjBwcm9kdWN0aW9ufGVufDF8fHx8MTc3MDIxOTc2M3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    alt: 'Sản phẩm chất lượng cao',
+    title: 'Cốc Nhựa & Đồ Dùng Nhất Lần Chất Lượng Cao',
+    subtitle: 'Giải pháp hoàn hảo cho nhà hàng, quán cafe, tiệc tùng và sự kiện',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1563171522-757f89d8cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXBlciUyMHN0cmF3cyUyMHN1c3RhaW5hYmxlfGVufDF8fHx8MTc3MDIxOTc2M3ww&ixlib=rb-4.1.0&q=80&w=1080',
+    alt: 'Ống hút giấy thân thiện môi trường',
+    title: 'Ống Hút Giấy Thân Thiện Môi Trường',
+    subtitle: 'Bảo vệ hành tinh xanh với sản phẩm sinh thái',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1597514402413-17eac2b501c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwY29udGFpbmVycyUyMHBhY2thZ2luZ3xlbnwxfHx8fDE3NzAyMTk3NjR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    alt: 'Đóng gói thực phẩm an toàn',
+    title: 'Bao Bì Thực Phẩm An Toàn',
+    subtitle: 'Đạt chuẩn VSATTP - An tâm sử dụng',
+  },
+];
+
+const promotionBanners = [
+  {
+    url: 'https://images.unsplash.com/photo-1606146485074-c5418c0c57bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwcGFja2FnaW5nJTIwc3VwcGxpZXN8ZW58MXx8fHwxNzM5NDE4NjEyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    alt: 'Khuyến mãi đặc biệt',
+    title: 'Khuyến Mãi Đặc Biệt',
+    subtitle: 'Giảm giá lên đến 30% cho đơn hàng số lượng lớn',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1751163781124-85bd6628de1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXJ2aW5nJTIwdHJheXMlMjBjYXRlcmluZ3xlbnwxfHx8fDE3NzAyMTk3NjR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    alt: 'Miễn phí vận chuyển',
+    title: 'Miễn Phí Vận Chuyển',
+    subtitle: 'Cho đơn hàng từ 500.000đ trở lên',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1767562678474-c92cec881bc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YWtlYXdheSUyMGZvb2QlMjBib3hlc3xlbnwxfHx8fDE3NzAyMTk3NjV8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    alt: 'Sản phẩm mới',
+    title: 'Sản Phẩm Mới 2026',
+    subtitle: 'Cập nhật những mẫu mã mới nhất',
+  },
+];
+
 export function HomePage() {
   return (
     <div>
-      {/* Banner */}
-      <section className="relative h-[500px] bg-gradient-to-r from-green-600 to-green-400 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img
-            src="https://images.unsplash.com/photo-1586574086326-f440257bc11b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwbGFzdGljJTIwY3VwcyUyMGZhY3RvcnklMjBwcm9kdWN0aW9ufGVufDF8fHx8MTc3MDIxOTc2M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Banner"
-            className="w-full h-full object-cover"
-          />
+      {/* Main Banner */}
+      <section className="bg-gray-100 pt-4">
+        <div className="max-w-7xl mx-auto px-4">
+          <Banner images={mainBanners} autoplayDelay={4000} height="h-[500px]" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
-          <div className="text-white max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Cốc Nhựa & Đồ Dùng Nhất Lần Chất Lượng Cao
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-green-50">
-              Giải pháp hoàn hảo cho nhà hàng, quán cafe, tiệc tùng và sự kiện
-            </p>
-            <div className="flex gap-4">
-              <Link
-                to="/products/all"
-                className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors inline-flex items-center gap-2"
-              >
-                Xem sản phẩm
-                <ChevronRight size={20} />
-              </Link>
-              <Link
-                to="/contact"
-                className="bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-800 transition-colors border-2 border-white"
-              >
-                Liên hệ ngay
-              </Link>
-            </div>
+      </section>
+
+      {/* Quick Actions */}
+      <section className="bg-green-600 py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+            <Link
+              to="/products/all"
+              className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors inline-flex items-center gap-2"
+            >
+              Xem tất cả sản phẩm
+              <ChevronRight size={20} />
+            </Link>
+            <Link
+              to="/contact"
+              className="bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-800 transition-colors border-2 border-white"
+            >
+              Liên hệ báo giá
+            </Link>
           </div>
         </div>
       </section>
@@ -131,6 +166,13 @@ export function HomePage() {
               </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Promotion Banner */}
+      <section className="bg-gray-50 py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          <Banner images={promotionBanners} autoplayDelay={5000} height="h-[300px]" />
         </div>
       </section>
 
