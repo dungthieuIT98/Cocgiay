@@ -1,16 +1,38 @@
 id,name,price,category,description,material,capacity,image
-1,Premium Paper Bowl 700ml,29000,bowl-container,Bát giấy cao cấp dùng một lần chịu nhiệt tốt,Paper w/ PE coating,700ml,/images/bowl-container/hop_giay_crpkrr.png
-2,Disposable Container 1000ml,35000,bowl-container,Hộp đựng đa năng dùng cho thức ăn nóng và lạnh,Food Grade PP,1000ml,/images/bowl-container/pp_deli_f8rwx2.png
-3,Clearly Plastic Bowl 500ml,27000,bowl-container,Bát nhựa trong suốt an toàn thực phẩm,PP,500ml,/images/bowl-container/pp_tròn_ccl3ne.png
-4,PET Cup Nắp Bằng 500ml,18000,pet-cup,LY nhựa PET trong suốt dùng cho trà sữa và nước lạnh,PET,500ml,/images/plastic-cup/pet-cup/32_pet_1_wfgvda.png
-5,PP Cup 300ml,15000,pp-cup,PP Cup tiện lợi dùng cho trà sữa và nước lạnh,PP,300ml,/images/plastic-cup/pp-cup/pp_cup_1_e5udlw.png
-6,PP Cup 500ml,18000,pp-cup,PP Cup dung tích lớn dùng cho đồ uống lạnh,PP,500ml,/images/plastic-cup/pp-cup/pp_cup_2_jsd7ke.png
-7,PP Cup 700ml,21000,pp-cup,PP Cup extra size cho trà sữa và smoothies,PP,700ml,/images/plastic-cup/pp-cup/pp_cup_3_za2mlj.png
-8,PP Cup 1000ml,24000,pp-cup,PP Cup size lớn nhất trong bộ sưu tập,PP,1000ml,/images/plastic-cup/pp-cup/pp_cup_4_qjls4b.png
-9,Plastic Roll 20cm x 200m,35000,plastic-roll,Cuộn màng nhựa PE đa dụng cuộn lớn,PE,20cm x 200m,/images/plastic-roll/cuon_tui_hjcuj0.png
-10,Plastic Roll 30cm x 300m,45000,plastic-roll,Cuộn màng nhựa PE kích thước lớn dùng đóng gói thực phẩm,PE,30cm x 300m,/images/plastic-roll/CUON_TUI_2_iyolh8.png
-11,Portion Cup 90ml,12000,portion-cup,Portion cup nhựa nhỏ dùng cho sốt và gia vị,PP,90ml,/images/portion-cup/portion_cup_ygjy2i.png
-12,Straw Plastic 20cm,5000,straw,Ống hút nhựa dùng 1 lần cho đồ uống lạnh,PP,20cm,/images/straw/straw_1_kvqikc.png
-13,Straw Plastic 25cm,5500,straw,Ống hút nhựa dài dùng cho trà sữa và nước trái cây,PP,25cm,/images/straw/straw_2_qnskq7.png
-14,Straw Paper 20cm,7000,straw,Ống hút giấy thân thiện môi trường,Paper,20cm,/images/straw/straw_1_kvqikc.png
-15,Straw Biodegradable 25cm,9000,straw,Ống hút phân hủy sinh học an toàn,PLA,25cm,/images/straw/jumbo_trang_loudmf.png
+1,Premium Paper Bowl 700ml,29000,bowl-container,Bát giấy cao cấp dùng một lần chịu nhiệt tốt,Paper w/ PE coating,700ml,/images/bowl-container/hopgiay.png
+2,Disposable Container 1000ml,35000,bowl-container,Hộp đựng đa năng dùng cho thức ăn nóng và lạnh,Food Grade PP,1000ml,/images/bowl-container/pp deli.png
+3,Clearly Plastic Bowl 500ml,27000,bowl-container,Bát nhựa trong suốt an toàn thực phẩm,PP,500ml,/images/bowl-container/pptron.png
+4,PET Cup Nắp Bằng 500ml,18000,pet-cup,LY nhựa PET trong suốt dùng cho trà sữa và nước lạnh,PET,500ml,/images/plastic-cup/pet-cup/32pet1.png
+5,PP Cup 300ml,15000,pp-cup,PP Cup tiện lợi dùng cho trà sữa và nước lạnh,PP,300ml,/images/plastic-cup/pp-cup/ppcup1.png
+6,PP Cup 500ml,18000,pp-cup,PP Cup dung tích lớn dùng cho đồ uống lạnh,PP,500ml,/images/plastic-cup/pp-cup/ppcup2.png
+7,PP Cup 700ml,21000,pp-cup,PP Cup extra size cho trà sữa và smoothies,PP,700ml,/images/plastic-cup/pp-cup/ppcup3.png
+8,PP Cup 1000ml,24000,pp-cup,PP Cup size lớn nhất trong bộ sưu tập,PP,1000ml,/images/plastic-cup/pp-cup/ppcup4.png
+9,Plastic Roll 20cm x 200m,35000,plastic-roll,Cuộn màng nhựa PE đa dụng cuộn lớn,PE,20cm x 200m,/images/plastic-roll/cuontui.png
+10,Plastic Roll 30cm x 300m,45000,plastic-roll,Cuộn màng nhựa PE kích thước lớn dùng đóng gói thực phẩm,PE,30cm x 300m,/images/plastic-roll/CUONTUI2.png
+11,Portion Cup 90ml,12000,portion-cup,Portion cup nhựa nhỏ dùng cho sốt và gia vị,PP,90ml,/images/portion-cup/portioncup.png
+12,Straw Plastic 20cm,5000,straw,Ống hút nhựa dùng 1 lần cho đồ uống lạnh,PP,20cm,/images/straw/straw1.png
+13,Straw Plastic 25cm,5500,straw,Ống hút nhựa dài dùng cho trà sữa và nước trái cây,PP,25cm,/images/straw/straw2.png
+14,Straw Paper 20cm,7000,straw,Ống hút giấy thân thiện môi trường,Paper,20cm,/images/straw/straw1.png
+15,Straw Biodegradable 25cm,9000,straw,Ống hút phân hủy sinh học an toàn,PLA,25cm,/images/straw/jumbotrang.png
+16,Paper Cup 8oz,12000,paper-cup,Cốc giấy dùng một lần cho đồ uống nóng và lạnh,Paper w/ PE coating,250ml,/images/paper-cup/cocgiay1.png
+17,Paper Cup 12oz,15000,paper-cup,Cốc giấy cỡ vừa phù hợp cho cà phê và trà,Paper w/ PE coating,350ml,/images/paper-cup/coc giay2.png
+18,Paper Cup 16oz,18000,paper-cup,Cốc giấy cỡ lớn cho đồ uống takeaway,Paper w/ PE coating,450ml,/images/paper-cup/cocgiay3.png
+19,Paper Cup 22oz,22000,paper-cup,Cốc giấy cỡ đại cho trà sữa và smoothie,Paper w/ PE coating,650ml,/images/paper-cup/coc giay4.png
+20,Printed Paper Cup 16oz,20000,paper-cup,Cốc giấy in logo thương hiệu đẹp mắt,Paper w/ PE coating,450ml,/images/paper-cup/cocin4.png
+21,Printed Box Small,25000,paper-cup,Hộp giấy in hình đựng thức ăn nhỏ,Food Grade Paper,500ml,/images/paper-cup/hopin2.png
+22,Printed Box Large,32000,paper-cup,Hộp giấy in hình đựng thức ăn lớn,Food Grade Paper,1000ml,/images/paper-cup/hopin4.png
+23,Ice Cream Paper Cup,18000,paper-cup,Cốc giấy chuyên dụng cho kem và tráng miệng,Paper w/ PE coating,350ml,/images/paper-cup/hopkem2.png
+24,Plastic Plate Round,15000,plate-tray,Đĩa nhựa tròn dùng một lần cho tiệc buffet,PP,9 inch,/images/plate-tray/dianhua.png
+25,PP Tray Set,28000,plate-tray,Khay nhựa PP đựng thức ăn có ngăn,PP,800ml,/images/plate-tray/ChatGPTImage22_54_1792026.png
+26,Custom Printed Cup 16oz,22000,printed-products,Cốc in thiết kế theo yêu cầu,Paper w/ PE coating,450ml,/images/printed-products/cocin4.png
+27,Custom Printed Cup 20oz,25000,printed-products,Cốc in logo cao cấp cỡ lớn,Paper w/ PE coating,600ml,/images/printed-products/cocin5.png
+28,Custom Printed Box Medium,28000,printed-products,Hộp in ấn theo thiết kế riêng,Food Grade Paper,750ml,/images/printed-products/hopin1.png
+29,Custom Printed Box Small,24000,printed-products,Hộp in ấn nhỏ gọn tiện lợi,Food Grade Paper,500ml,/images/printed-products/hopin2.png
+30,Custom Printed Box Large,35000,printed-products,Hộp in ấn cỡ lớn đa dụng,Food Grade Paper,1200ml,/images/printed-products/hopin4.png
+31,Ice Cream Box Custom,26000,printed-products,Hộp đựng kem in thiết kế đẹp,Food Grade Paper,350ml,/images/printed-products/hopkem.png
+32,Ice Cream Box Printed,27000,printed-products,Hộp đựng kem in hình đa dạng,Food Grade Paper,400ml,/images/printed-products/hopkem2.png
+33,Printed Sample Design,15000,printed-products,Mẫu thiết kế in ấn tham khảo,Paper,N/A,/images/printed-products/mauin3.png
+34,PET Cup Lid 500ml,5000,lid-seal-film,Nắp nhựa PET trong suốt cho ly 500ml,PET,500ml,/images/plastic-cup/lid-seal-film/nap1.png
+35,PP Cup Lid Dome,6000,lid-seal-film,Nắp cầu PP có lỗ cắm ống hút,PP,Multi-size,/images/plastic-cup/lid-seal-film/nap2.png
+36,Flat Lid 700ml,5500,lid-seal-film,Nắp bằng cho ly 700ml,PP,700ml,/images/plastic-cup/lid-seal-film/nap3.png
+37,Seal Film Roll,25000,lid-seal-film,Màng phong kín cuộn dùng cho ly nhựa,PE Film,10cm x 500m,/images/plastic-cup/lid-seal-film/nap4.png

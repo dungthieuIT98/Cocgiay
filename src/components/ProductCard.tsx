@@ -23,7 +23,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
   return (
     <div 
       onClick={handleCardClick}
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer"
+      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer"
     >
       <div className="relative overflow-hidden h-56 bg-gray-100">
         <img
