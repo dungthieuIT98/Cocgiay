@@ -1,16 +1,16 @@
 id,name,price,category,description,material,capacity,image
-1,Premium Paper Bowl 700ml,29000,bowl-container,Bát giấy cao cấp dùng một lần chịu nhiệt tốt,Paper w/ PE coating,700ml,/images/BOWL + CONTAINER/hop_giay_crpkrr.png
-2,Disposable Container 1000ml,35000,bowl-container,Hộp đựng đa năng dùng cho thức ăn nóng và lạnh,Food Grade PP,1000ml,/images/BOWL + CONTAINER/pp_deli_f8rwx2.png
-3,Clearly Plastic Bowl 500ml,27000,bowl-container,Bát nhựa trong suốt an toàn thực phẩm,PP,500ml,/images/BOWL + CONTAINER/pp_tròn_ccl3ne.png
-4,PET Cup Nắp Bằng 500ml,18000,pet-cup,LY nhựa PET trong suốt dùng cho trà sữa và nước lạnh,PET,500ml,/images/PLASTIC CUP/PET CUP/32_pet_1_wfgvda.png
-5,PP Cup 300ml,15000,pp-cup,PP Cup tiện lợi dùng cho trà sữa và nước lạnh,PP,300ml,/images/PLASTIC CUP/PP CUP/pp_cup_1_e5udlw.png
-6,PP Cup 500ml,18000,pp-cup,PP Cup dung tích lớn dùng cho đồ uống lạnh,PP,500ml,/images/PLASTIC CUP/PP CUP/pp_cup_2_jsd7ke.png
-7,PP Cup 700ml,21000,pp-cup,PP Cup extra size cho trà sữa và smoothies,PP,700ml,/images/PLASTIC CUP/PP CUP/pp_cup_3_za2mlj.png
-8,PP Cup 1000ml,24000,pp-cup,PP Cup size lớn nhất trong bộ sưu tập,PP,1000ml,/images/PLASTIC CUP/PP CUP/pp_cup_4_qjls4b.png
-9,Plastic Roll 20cm x 200m,35000,plastic-roll,Cuộn màng nhựa PE đa dụng cuộn lớn,PE,20cm x 200m,/images/PLASTIC ROLL/cuon_tui_hjcuj0.png
-10,Plastic Roll 30cm x 300m,45000,plastic-roll,Cuộn màng nhựa PE kích thước lớn dùng đóng gói thực phẩm,PE,30cm x 300m,/images/PLASTIC ROLL/CUON_TUI_2_iyolh8.png
-11,Portion Cup 90ml,12000,portion-cup,Portion cup nhựa nhỏ dùng cho sốt và gia vị,PP,90ml,/images/PORTION CUP/portion_cup_ygjy2i.png
-12,Straw Plastic 20cm,5000,straw,Ống hút nhựa dùng 1 lần cho đồ uống lạnh,PP,20cm,/images/STRAW/straw_1_kvqikc.png
-13,Straw Plastic 25cm,5500,straw,Ống hút nhựa dài dùng cho trà sữa và nước trái cây,PP,25cm,/images/STRAW/straw_2_qnskq7.png
-14,Straw Paper 20cm,7000,straw,Ống hút giấy thân thiện môi trường,Paper,20cm,/images/STRAW/straw_1_kvqikc.png
-15,Straw Biodegradable 25cm,9000,straw,Ống hút phân hủy sinh học an toàn,PLA,25cm,/images/STRAW/jumbo_trang_loudmf.png
+1,Premium Paper Bowl 700ml,29000,bowl-container,Bát giấy cao cấp dùng một lần chịu nhiệt tốt,Paper w/ PE coating,700ml,/images/bowl-container/hop_giay_crpkrr.png
+2,Disposable Container 1000ml,35000,bowl-container,Hộp đựng đa năng dùng cho thức ăn nóng và lạnh,Food Grade PP,1000ml,/images/bowl-container/pp_deli_f8rwx2.png
+3,Clearly Plastic Bowl 500ml,27000,bowl-container,Bát nhựa trong suốt an toàn thực phẩm,PP,500ml,/images/bowl-container/pp_tròn_ccl3ne.png
+4,PET Cup Nắp Bằng 500ml,18000,pet-cup,LY nhựa PET trong suốt dùng cho trà sữa và nước lạnh,PET,500ml,/images/plastic-cup/pet-cup/32_pet_1_wfgvda.png
+5,PP Cup 300ml,15000,pp-cup,PP Cup tiện lợi dùng cho trà sữa và nước lạnh,PP,300ml,/images/plastic-cup/pp-cup/pp_cup_1_e5udlw.png
+6,PP Cup 500ml,18000,pp-cup,PP Cup dung tích lớn dùng cho đồ uống lạnh,PP,500ml,/images/plastic-cup/pp-cup/pp_cup_2_jsd7ke.png
+7,PP Cup 700ml,21000,pp-cup,PP Cup extra size cho trà sữa và smoothies,PP,700ml,/images/plastic-cup/pp-cup/pp_cup_3_za2mlj.png
+8,PP Cup 1000ml,24000,pp-cup,PP Cup size lớn nhất trong bộ sưu tập,PP,1000ml,/images/plastic-cup/pp-cup/pp_cup_4_qjls4b.png
+9,Plastic Roll 20cm x 200m,35000,plastic-roll,Cuộn màng nhựa PE đa dụng cuộn lớn,PE,20cm x 200m,/images/plastic-roll/cuon_tui_hjcuj0.png
+10,Plastic Roll 30cm x 300m,45000,plastic-roll,Cuộn màng nhựa PE kích thước lớn dùng đóng gói thực phẩm,PE,30cm x 300m,/images/plastic-roll/CUON_TUI_2_iyolh8.png
+11,Portion Cup 90ml,12000,portion-cup,Portion cup nhựa nhỏ dùng cho sốt và gia vị,PP,90ml,/images/portion-cup/portion_cup_ygjy2i.png
+12,Straw Plastic 20cm,5000,straw,Ống hút nhựa dùng 1 lần cho đồ uống lạnh,PP,20cm,/images/straw/straw_1_kvqikc.png
+13,Straw Plastic 25cm,5500,straw,Ống hút nhựa dài dùng cho trà sữa và nước trái cây,PP,25cm,/images/straw/straw_2_qnskq7.png
+14,Straw Paper 20cm,7000,straw,Ống hút giấy thân thiện môi trường,Paper,20cm,/images/straw/straw_1_kvqikc.png
+15,Straw Biodegradable 25cm,9000,straw,Ống hút phân hủy sinh học an toàn,PLA,25cm,/images/straw/jumbo_trang_loudmf.png
