@@ -7,7 +7,6 @@
   // - Nếu repo là username.github.io: base: '/'
   // - Nếu repo có tên khác (vd: cocgiay): base: '/cocgiay/'
   // Xem chi tiết trong DEPLOYMENT.md
-
   export default defineConfig({
     base: '/Cocgiay/',  // Thêm dấu / ở cuối
     plugins: [react()],
