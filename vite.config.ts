@@ -3,7 +3,13 @@
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
+  // Để deploy lên GitHub Pages:
+  // - Nếu repo là username.github.io: base: '/'
+  // - Nếu repo có tên khác (vd: cocgiay): base: '/cocgiay/'
+  // Xem chi tiết trong DEPLOYMENT.md
+
   export default defineConfig({
+    // base: '/',  // Uncomment và sửa nếu deploy lên GitHub Pages
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
