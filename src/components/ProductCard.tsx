@@ -1,4 +1,5 @@
 import { ShoppingCart, Star } from 'lucide-react';
+import { useNavigate } from 'react-router';
 import type { Product } from '../types';
 
 interface ProductCardProps {
@@ -7,13 +8,27 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, onAddToCart }: ProductCardProps) {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/product/${product.id}`);
+  };
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onAddToCart(product);
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div 
+      onClick={handleCardClick}
+      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer"
+    >
       <div className="relative overflow-hidden h-56 bg-gray-100">
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+          className="w-full h-full object-cover transition-transform duration-300"
         />
         <div className="absolute top-2 right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
           {product.capacity}
@@ -57,7 +72,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
           </div>
           
           <button
-            onClick={() => onAddToCart(product)}
+            onClick={handleAddToCart}
             className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
           >
             <ShoppingCart size={18} />

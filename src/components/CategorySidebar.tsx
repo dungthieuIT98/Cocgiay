@@ -114,7 +114,7 @@ export function CategorySidebar({ selectedCategory }: CategorySidebarProps) {
         {hasChildren ? (
           <button
             type="button"
-            className="category-menu-row category-menu-row-button"
+            className={`category-menu-row category-menu-row-button ${isActive ? 'active' : ''}`}
             onClick={() => handleToggle(node.id, depth)}
             aria-expanded={isOpen}
             aria-controls={`category-children-${node.id}`}
@@ -125,9 +125,9 @@ export function CategorySidebar({ selectedCategory }: CategorySidebarProps) {
 
             <span className={`category-menu-link ${isActive ? 'category-menu-link-active' : ''} ${isRoot ? 'category-menu-link-root' : ''}`}>
               <span className="category-menu-label">{node.name}</span>
-              <span className={`category-menu-count ${isActive ? 'category-menu-count-active' : ''}`}>
+              {/* <span className={`category-menu-count ${isActive ? 'category-menu-count-active' : ''}`}>
                 ({node.count})
-              </span>
+              </span> */}
             </span>
           </button>
         ) : (
@@ -139,9 +139,9 @@ export function CategorySidebar({ selectedCategory }: CategorySidebarProps) {
               className={`category-menu-link ${isActive ? 'category-menu-link-active' : ''} ${isRoot ? 'category-menu-link-root' : ''}`}
             >
               <span className="category-menu-label">{node.name}</span>
-              <span className={`category-menu-count ${isActive ? 'category-menu-count-active' : ''}`}>
+              {/* <span className={`category-menu-count ${isActive ? 'category-menu-count-active' : ''}`}>
                 ({node.count})
-              </span>
+              </span> */}
             </Link>
           </div>
         )}

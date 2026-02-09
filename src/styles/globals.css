@@ -259,7 +259,19 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.category-menu-row:has(.category-menu-link-active) {
+  background: #16a34a;
+  box-shadow: 0 2px 4px rgba(22, 163, 74, 0.2);
+}
+
+.category-menu-row:has(.category-menu-link:hover:not(.category-menu-link-active)) {
+  background: #f0fdf4;
+  transform: translateX(2px);
 }
 
 .category-menu-row-button {
@@ -268,11 +280,33 @@ html {
   cursor: pointer;
   background: transparent;
   border: none;
-  transition: opacity 0.15s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
 }
 
-.category-menu-row-button:hover {
-  opacity: 0.8;
+.category-menu-row-button:hover:not(.active) {
+  background: #f0fdf4;
+  transform: translateX(2px);
+}
+
+.category-menu-row-button.active {
+  background: #16a34a;
+  box-shadow: 0 2px 4px rgba(22, 163, 74, 0.2);
+}
+
+.category-menu-row-button.active .category-menu-link {
+  color: white;
+  font-weight: 600;
+}
+
+.category-menu-row-button.active .category-menu-count {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.category-menu-row-button.active .category-menu-toggle {
+  color: white;
 }
 
 .category-menu-toggle {
@@ -300,6 +334,10 @@ html {
   flex-shrink: 0;
 }
 
+.category-menu-row:has(.category-menu-link-active) .category-menu-toggle-placeholder {
+  opacity: 0;
+}
+
 .category-menu-link {
   flex: 1;
   display: flex;
@@ -310,7 +348,7 @@ html {
   background: transparent;
   color: #374151;
   border: 0;
-  transition: color 0.15s ease;
+  transition: all 0.2s ease;
   text-decoration: none;
 }
 
@@ -323,8 +361,8 @@ html {
 }
 
 .category-menu-link-active {
-  color: #991b1b;
-  font-weight: 500;
+  color: white;
+  font-weight: 600;
 }
 
 .category-menu-link-root {
@@ -335,7 +373,7 @@ html {
 }
 
 .category-menu-link-root.category-menu-link-active {
-  color: #991b1b;
+  color: white;
 }
 
 .category-menu-label {
@@ -351,6 +389,26 @@ html {
 }
 
 .category-menu-count-active {
-  color: #991b1b;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
+}
+
+/* Banner Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 2s ease-out 1s backwards;
 }

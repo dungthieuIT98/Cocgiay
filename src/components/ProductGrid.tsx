@@ -42,6 +42,10 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
       ? products.filter(product => childCategoryIds.includes(product.category))
       : products.filter(product => product.category === selectedCategory);
 
+  const selectedCategoryName = selectedCategory === 'all' 
+    ? 'Tất cả sản phẩm'
+    : categories.find(cat => cat.id === selectedCategory)?.name || 'Sản phẩm đã chọn';
+
   if (loading) {
     return (
       <div className="text-center py-12">
@@ -54,10 +58,9 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800">
-          {selectedCategory === 'all' ? 'Tất cả sản phẩm' : 'Sản phẩm đã chọn'}
+        <h2 className="text-2xl font-bold text-gray-800 uppercase">
+          {selectedCategoryName}
         </h2>
-        <p className="text-gray-600 mt-1">{filteredProducts.length} sản phẩm</p>
       </div>
       
       {filteredProducts.length === 0 ? (

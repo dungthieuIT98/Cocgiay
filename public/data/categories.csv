@@ -1,19 +1,13 @@
-id,name,count,parentId
-all,Tất cả sản phẩm,16,
-ong-hut,Ống hút,2,
-ong-hut-giay,Ống hút giấy,2,ong-hut
-bat,Bát & tô,4,
-bat-giay,Bát giấy tô giấy,2,bat
-bat-nhua,Bát nhựa tô nhựa,2,bat
-chen,Chén,2,
-chen-giay,Chén giấy,1,chen
-chen-nhua,Chén nhựa,1,chen
-khay,Khay,4,
-khay-giay,Khay giấy,1,khay
-khay-nhua,Khay nhựa,1,khay
-khay-xop,Khay xốp,1,khay
-khay-nhom,Khay nhôm,1,khay
-hop,Hộp,4,
-hop-giay,Hộp giấy,2,hop
-hop-nhua,Hộp nhựa,1,hop
-hop-xop,Hộp xốp,1,hop
+id,name,count,parentId,image
+all,Tất cả sản phẩm,16,,/images/Anh bia/anh_bia_1_zxgr9u.png
+bowl-container,BOWL + CONTAINER,0,null,/images/BOWL + CONTAINER/hop_giay_crpkrr.png
+paper-cup,PAPER CUP,0,null,/images/PAPER CUP/coc_giay2_n0b2fe.png
+plastic-cup,PLASTIC CUP,0,null,/images/PLASTIC CUP/PP CUP/pp_cup_1_e5udlw.png
+plastic-roll,PLASTIC ROLL,0,null,/images/PLASTIC ROLL/cuon_tui_hjcuj0.png
+plate-tray,PLATE & TRAY,0,null,/images/BOWL + CONTAINER/set_pp_2_rnvcqj.png
+portion-cup,PORTION CUP,0,null,/images/PORTION CUP/portion_cup_ygjy2i.png
+printed-products,PRINTED PRODUCTS,0,null,/images/PAPER CUP/hop_in_2_esnyt1.png
+straw,STRAW,0,null,/images/STRAW/straw_1_kvqikc.png
+lid-seal-film,LID & SEAL FILM,0,plastic-cup,/images/BOWL + CONTAINER/top_cn_pp_yqbtw6.png
+pet-cup,PET CUP,0,plastic-cup,/images/PLASTIC CUP/PET CUP/32_pet_1_wfgvda.png
+pp-cup,PP CUP,0,plastic-cup,/images/PLASTIC CUP/PP CUP/pp_cup_1_e5udlw.png
