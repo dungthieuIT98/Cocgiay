@@ -9,7 +9,7 @@
   // Xem chi tiết trong DEPLOYMENT.md
 
   export default defineConfig({
-    // base: '/',  // Uncomment và sửa nếu deploy lên GitHub Pages
+    base: '/Cocgiay/',  // Thêm dấu / ở cuối
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
