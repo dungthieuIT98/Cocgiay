@@ -18,4 +18,6 @@ export const router = createBrowserRouter([
       { path: "product/:id", Component: ProductDetailPage },
     ],
   },
-]);
+], {
+  basename: import.meta.env.BASE_URL, // Tự động lấy base path từ vite.config.ts
+});
