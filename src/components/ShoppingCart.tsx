@@ -1,5 +1,6 @@
 import { X, Minus, Plus, Trash2 } from 'lucide-react';
 import type { CartItem } from '../types';
+import { resolvePublicPath } from '../utils/csvLoader';
 
 interface ShoppingCartProps {
   isOpen: boolean;
@@ -50,7 +51,7 @@ export function ShoppingCart({
                 <div key={item.id} className="bg-gray-50 rounded-lg p-4">
                   <div className="flex gap-4">
                     <img
-                      src={item.image}
+                      src={resolvePublicPath(item.image)}
                       alt={item.name}
                       className="w-20 h-20 object-cover rounded"
                     />

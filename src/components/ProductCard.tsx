@@ -1,6 +1,7 @@
 import { ShoppingCart, Star } from 'lucide-react';
 import { useNavigate } from 'react-router';
 import type { Product } from '../types';
+import { resolvePublicPath } from '../utils/csvLoader';
 
 interface ProductCardProps {
   product: Product;
@@ -26,7 +27,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
     >
       <div className="relative overflow-hidden h-56 bg-gray-100">
         <img
-          src={product.image}
+          src={resolvePublicPath(product.image)}
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-300"
         />

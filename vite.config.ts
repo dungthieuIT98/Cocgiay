@@ -9,7 +9,18 @@
   // Xem chi tiết trong DEPLOYMENT.md
   export default defineConfig({
     base: '/Cocgiay/',  // Thêm dấu / ở cuối
-    plugins: [react()],
+    plugins: [
+      react(),
+      {
+        name: 'allow-all-hosts',
+        configureServer(server) {
+          server.middlewares.use((req, res, next) => {
+            // Bypass host check cho ngrok
+            next();
+          });
+        },
+      },
+    ],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -58,8 +69,17 @@
       target: 'esnext',
       outDir: 'dist',
     },
-    server: {
+   server: {
+      host: true,
       port: 3000,
       open: true,
+      allowedHosts: true,
+      hmr: {
+        clientPort: 443,
+      },
+    },
+    preview: {
+      host: '0.0.0.0',
+      port: 3000,
     },
   });

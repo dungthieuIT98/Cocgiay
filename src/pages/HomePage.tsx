@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { ChevronRight } from 'lucide-react';
 import Banner from '../components/Banner';
-import { loadCSV } from '../utils/csvLoader';
+import { loadCSV, resolvePublicPath } from '../utils/csvLoader';
 
 interface Category {
   id: string;
@@ -95,7 +95,7 @@ export function HomePage() {
               >
                 <div className="aspect-square overflow-hidden bg-gray-100">
                   <img
-                    src={category.image}
+                    src={resolvePublicPath(category.image)}
                     alt={category.name}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                   />

@@ -1,6 +1,15 @@
+// Helper function to resolve paths with BASE_URL
+export function resolvePublicPath(path: string): string {
+  const base = import.meta.env.BASE_URL || '/';
+  // Remove leading slash if present to avoid double slashes
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${base}${cleanPath}`;
+}
+
 export async function loadCSV<T>(path: string): Promise<T[]> {
   try {
-    const response = await fetch(path);
+    const fullPath = resolvePublicPath(path);
+    const response = await fetch(fullPath);
     if (!response.ok) {
       throw new Error(`Failed to load CSV: ${response.status} ${response.statusText}`);
     }

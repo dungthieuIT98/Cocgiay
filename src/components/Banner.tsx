@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { loadCSV } from '../utils/csvLoader';
+import { loadCSV, resolvePublicPath } from '../utils/csvLoader';
 
 interface Banner {
   id: number;
@@ -76,7 +76,7 @@ export default function Banner() {
           style={{ zIndex: i === index ? 10 : 0 }}
         >
           <img
-            src={banner}
+            src={resolvePublicPath(banner)}
             alt={`Banner ${i + 1}`}
             className="w-full h-full object-cover"
           />

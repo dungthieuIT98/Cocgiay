@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { ShoppingCart, Star, ArrowLeft, Check } from 'lucide-react';
 import type { Product } from '../types';
-import { loadCSV } from '../utils/csvLoader';
+import { loadCSV, resolvePublicPath } from '../utils/csvLoader';
 
 export function ProductDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -105,7 +105,7 @@ export function ProductDetailPage() {
             
             <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200">
                 <img
-                src={product.image}
+                src={resolvePublicPath(product.image)}
                 alt={product.name}
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
