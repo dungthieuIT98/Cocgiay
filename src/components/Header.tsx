@@ -1,4 +1,5 @@
 import { ShoppingCart, Phone, Mail } from 'lucide-react';
+import { resolvePublicPath } from '../utils/csvLoader';
 
 interface HeaderProps {
   cartItemCount: number;
@@ -26,9 +27,16 @@ export function Header({ cartItemCount, onCartClick }: HeaderProps) {
         </div>
         
         <div className="flex items-center justify-between py-4">
-          <div>
-            <h1 className="text-3xl font-bold">🥤 Cốc Nhựa Việt</h1>
-            <p className="text-green-100 text-sm mt-1">Chất lượng cao - Giá cả hợp lý</p>
+          <div className="flex items-center gap-4">
+            <img 
+              src={resolvePublicPath('/images/banners/logo.png')}
+              alt="Logo Cốc Nhựa Việt" 
+              className="h-16 w-auto"
+            />
+            <div>
+              <h1 className="text-3xl font-bold">Cốc Nhựa Việt</h1>
+              <p className="text-green-100 text-sm mt-1">Chất lượng cao - Giá cả hợp lý</p>
+            </div>
           </div>
           
           <button

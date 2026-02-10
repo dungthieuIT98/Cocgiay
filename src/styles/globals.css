@@ -412,3 +412,7 @@ html {
 .animate-fade-in-delay {
   animation: fade-in 2s ease-out 1s backwards;
 }
+/* Ellipse clip-path for logo */
+.ellipse-clip {
+  clip-path: ellipse(50% 45%);
+}

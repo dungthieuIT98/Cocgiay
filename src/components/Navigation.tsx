@@ -39,8 +39,22 @@ export function Navigation() {
         
         {/* Main header */}
         <div className="flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold">🥤 Cốc Nhựa Việt</h1>
+          <Link to="/" className="flex items-center gap-4 group">
+            <div className="relative">
+              <img 
+                src="/images/banners/logo.png"
+                alt="Logo VN PLASTIC" 
+                className="h-16 w-28 object-cover ellipse-clip border-4 border-white shadow-lg 
+                         transition-all duration-300 ease-in-out
+                         group-hover:scale-110 group-hover:shadow-2xl group-hover:border-green-200"
+              />
+              <div className="absolute inset-0 ellipse-clip bg-gradient-to-br from-transparent to-green-900/20 
+                            opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="group-hover:translate-x-1 transition-transform duration-300">
+              <h1 className="text-3xl font-bold">VN PLASTIC</h1>
+              <p className="text-green-100 text-sm mt-1">Chất lượng cao - Giá cả hợp lý</p>
+            </div>
           </Link>
           
           {/* Desktop menu */}
