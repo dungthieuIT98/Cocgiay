@@ -43,7 +43,7 @@ export function Navigation() {
           <Link to="/" className="flex items-center gap-4 group">
             <div className="relative">
               <img 
-                src={resolvePublicPath('/images/banners/logo.png')}
+                src={resolvePublicPath('/images/anh_bia/logo.png')}
                 alt="Logo VN PLASTIC" 
                 className="h-16 w-28 object-cover ellipse-clip border-4 border-white shadow-lg 
                          transition-all duration-300 ease-in-out
