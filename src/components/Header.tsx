@@ -14,15 +14,14 @@ export function Header({ cartItemCount, onCartClick }: HeaderProps) {
           <div className="flex gap-6">
             <div className="flex items-center gap-2">
               <Phone size={14} />
-              <span>0123-456-789</span>
+              <span>whatapps: +84091493394</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail size={14} />
-              <span>info@cocnhua.vn</span>
+              <span>thunga.hoang@gmail.com</span>
             </div>
           </div>
           <div>
-            <span>Miễn phí vận chuyển cho đơn hàng trên 500.000đ</span>
           </div>
         </div>
         

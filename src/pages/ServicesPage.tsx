@@ -122,7 +122,7 @@ export function ServicesPage() {
             href="tel:0123456789"
             className="bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-800 transition-colors border-2 border-white"
           >
-            Gọi: 0123-456-789
+            Gọi: whatapps: +84091493394
           </a>
         </div>
       </section>

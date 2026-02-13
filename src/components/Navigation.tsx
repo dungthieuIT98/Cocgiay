@@ -26,15 +26,14 @@ export function Navigation() {
           <div className="flex gap-6">
             <div className="flex items-center gap-2">
               <Phone size={14} />
-              <span>0123-456-789</span>
+              <span>whatapps: +84091493394</span>
             </div>
             <div className="hidden md:flex items-center gap-2">
               <Mail size={14} />
-              <span>info@cocnhua.vn</span>
+              <span>thunga.hoang@gmail.com</span>
             </div>
           </div>
           <div className="hidden md:block">
-            <span>Miễn phí vận chuyển cho đơn hàng trên 500.000đ</span>
           </div>
         </div>
         
@@ -53,7 +52,7 @@ export function Navigation() {
                             opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="group-hover:translate-x-1 transition-transform duration-300">
-              <h1 className="text-3xl font-bold">VN PLASTIC</h1>
+              <h1 className="text-3xl font-bold">VN PLASTIC SOURCING</h1>
               <p className="text-green-100 text-sm mt-1">Chất lượng cao - Giá cả hợp lý</p>
             </div>
           </Link>

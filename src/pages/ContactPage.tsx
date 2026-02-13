@@ -44,7 +44,7 @@ export function ContactPage() {
               <input
                 type="tel"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-                placeholder="0123-456-789"
+                placeholder="whatapps: +84091493394"
               />
             </div>
             
@@ -81,8 +81,7 @@ export function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Điện thoại</h3>
-                  <p className="text-gray-600">0123-456-789</p>
-                  <p className="text-gray-600">0987-654-321</p>
+                  <p className="text-gray-600">whatapps: +84091493394</p>
                 </div>
               </div>
               
@@ -92,8 +91,7 @@ export function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Email</h3>
-                  <p className="text-gray-600">info@cocnhua.vn</p>
-                  <p className="text-gray-600">support@cocnhua.vn</p>
+                  <p className="text-gray-600">thunga.hoang@gmail.com</p>
                 </div>
               </div>
               
@@ -104,8 +102,8 @@ export function ContactPage() {
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Địa chỉ</h3>
                   <p className="text-gray-600">
-                    123 Đường ABC, Phường XYZ<br />
-                    Quận 1, TP. Hồ Chí Minh
+                    37 DC 13- Tây Thạch<br />
+                    Tân Phú, TP. Hồ Chí Minh
                   </p>
                 </div>
               </div>
@@ -126,9 +124,16 @@ export function ContactPage() {
           {/* Map placeholder */}
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Bản Đồ</h2>
-            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-              <p className="text-gray-500">Google Maps sẽ hiển thị ở đây</p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.910554330909!2d106.62528961079366!3d10.81815685837771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bdf73ac93d7%3A0x8d81527c156d1f3e!2zMzcgxJDGsOG7nW5nIFTDonkgVGjhuqFuaCwgVMOieSBUaOG6oW5oLCBUw6JuIFBow7osIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1770970144692!5m2!1svi!2s"
+              width="100%"
+              height="350"
+              className="rounded-lg border-0 w-full"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map"
+            ></iframe>
           </div>
         </div>
       </div>

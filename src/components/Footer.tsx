@@ -86,19 +86,19 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin size={20} className="text-green-400 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  123 Đường ABC, Phường XYZ, Quận 1, TP.HCM
+                  37 DC 13-Tây thạnh tân phú-TPHCM
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={20} className="text-green-400 flex-shrink-0" />
                 <a href="tel:0123456789" className="text-gray-300 hover:text-green-400 transition-colors">
-                  0123-456-789
+                  whatapps: +84091493394
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={20} className="text-green-400 flex-shrink-0" />
-                <a href="mailto:info@cocnhua.vn" className="text-gray-300 hover:text-green-400 transition-colors">
-                  info@cocnhua.vn
+                <a href="mailto:thunga.hoang@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors">
+                  thunga.hoang@gmail.com
                 </a>
               </li>
             </ul>
