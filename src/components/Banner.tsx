@@ -61,7 +61,7 @@ export default function Banner() {
   return (
     <div 
       className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-xl shadow-2xl group bg-gray-100"
-      style={{ minHeight: '500px' }}
+      style={{ minHeight: '500px', margin: '2px' }}
     >
       {banners.map((banner, i) => (
         <div

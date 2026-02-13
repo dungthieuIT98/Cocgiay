@@ -127,7 +127,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Fast delivery</h3>
               <p className="text-gray-600">
-                Free shipping for orders over 500,000 VND
+                We offer reliable shipping services 24/7 to meet your needs.
               </p>
             </div>
             <div className="text-center">
