@@ -42,8 +42,8 @@ export function ShoppingCart({
         <div className="flex-1 overflow-y-auto p-6">
           {items.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">Giỏ hàng trống</p>
-              <p className="text-gray-400 text-sm mt-2">Hãy thêm sản phẩm vào giỏ hàng!</p>
+              <p className="text-gray-500 text-lg">Cart is empty</p>
+              <p className="text-gray-400 text-sm mt-2">Add products to your cart!</p>
             </div>
           ) : (
             <div className="space-y-4">
@@ -102,15 +102,15 @@ export function ShoppingCart({
           <div className="border-t border-gray-200 p-6 bg-gray-50">
             <div className="space-y-3 mb-4">
               <div className="flex justify-between text-gray-700">
-                <span>Tạm tính:</span>
+                <span>Subtotal:</span>
                 <span>{total.toLocaleString('vi-VN')}đ</span>
               </div>
               <div className="flex justify-between text-gray-700">
-                <span>Phí vận chuyển:</span>
-                <span className="text-green-600">Miễn phí</span>
+                <span>Shipping fee:</span>
+                <span className="text-green-600">Free</span>
               </div>
               <div className="border-t border-gray-300 pt-3 flex justify-between text-xl font-bold">
-                <span>Tổng cộng:</span>
+                <span>Total:</span>
                 <span className="text-green-600">{total.toLocaleString('vi-VN')}đ</span>
               </div>
             </div>

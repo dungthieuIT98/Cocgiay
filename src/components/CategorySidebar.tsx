@@ -53,6 +53,12 @@ export function CategorySidebar({ selectedCategory }: CategorySidebarProps) {
       }
     });
 
+    const sortTree = (nodes: CategoryNode[]) => {
+      nodes.sort((a, b) => a.name.localeCompare(b.name));
+      nodes.forEach(node => sortTree(node.children));
+    };
+    sortTree(rootsList);
+
     return { roots: rootsList, parentById: parentMap, childrenById: childrenMap };
   }, [categories]);
 
@@ -162,7 +168,7 @@ export function CategorySidebar({ selectedCategory }: CategorySidebarProps) {
     <div className="bg-white rounded-lg shadow-md p-6 sticky top-8">
       <div className="flex items-center gap-2 mb-6 pb-4 border-b border-gray-200">
         <List className="text-green-600" size={24} />
-        <h2 className="text-xl font-bold text-gray-800">Danh mục sản phẩm</h2>
+        <h2 className="text-xl font-bold text-gray-800">Product categories</h2>
       </div>
 
       <ul className="category-menu">

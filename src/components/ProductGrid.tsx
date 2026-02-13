@@ -88,14 +88,14 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
   }, [nameFilter, sizeFilter, categoryFilter, selectedCategory]);
 
   const selectedCategoryName = selectedCategory === 'all' 
-    ? 'Tất cả sản phẩm'
-    : categories.find(cat => cat.id === selectedCategory)?.name || 'Sản phẩm đã chọn';
+    ? 'All products'
+    : categories.find(cat => cat.id === selectedCategory)?.name || 'Selected products';
 
   if (loading) {
     return (
       <div className="text-center py-12">
         <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-green-600"></div>
-        <p className="text-gray-600 mt-4">Đang tải sản phẩm...</p>
+        <p className="text-gray-600 mt-4">Loading products...</p>
       </div>
     );
   }
@@ -104,16 +104,16 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
     <div style={{ padding: '10px' }}>
       {/* Filter Section */}
       {/* <div className="mb-6 p-4 bg-gray-50 rounded-lg space-y-4">
-        <h3 className="text-lg font-semibold text-gray-700 mb-3">Bộ lọc tìm kiếm</h3>
+        <h3 className="text-lg font-semibold text-gray-700 mb-3">Search filters</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label htmlFor="nameFilter" className="block text-sm font-medium text-gray-700 mb-1">
-              Tên sản phẩm
+              Product name
             </label>
             <input
               id="nameFilter"
               type="text"
-              placeholder="Tìm theo tên..."
+              placeholder="Search by name..."
               value={nameFilter}
               onChange={(e) => setNameFilter(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -122,12 +122,12 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
           
           <div>
             <label htmlFor="sizeFilter" className="block text-sm font-medium text-gray-700 mb-1">
-              Dung tích / Kích thước
+              Capacity / Size
             </label>
             <input
               id="sizeFilter"
               type="text"
-              placeholder="Tìm theo dung tích..."
+              placeholder="Search by capacity..."
               value={sizeFilter}
               onChange={(e) => setSizeFilter(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -136,12 +136,12 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
           
           <div>
             <label htmlFor="categoryFilter" className="block text-sm font-medium text-gray-700 mb-1">
-              Mã danh mục
+              Category code
             </label>
             <input
               id="categoryFilter"
               type="text"
-              placeholder="Tìm theo mã danh mục..."
+              placeholder="Search by category code..."
               value={categoryFilter}
               onChange={(e) => setCategoryFilter(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -152,7 +152,7 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
         {(nameFilter || sizeFilter || categoryFilter) && (
           <div className="flex items-center justify-between pt-2 border-t border-gray-200">
             <p className="text-sm text-gray-600">
-              Tìm thấy <span className="font-semibold text-green-600">{filteredProducts.length}</span> sản phẩm
+              Found <span className="font-semibold text-green-600">{filteredProducts.length}</span> products
             </p>
             <button
               onClick={() => {
@@ -162,7 +162,7 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
               }}
               className="text-sm text-red-600 hover:text-red-700 font-medium"
             >
-              Xóa bộ lọc
+              Clear filters
             </button>
           </div>
         )}
@@ -170,18 +170,18 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
 
       {filteredProducts.length === 0 ? (
         <div className="text-center py-12 bg-gray-50 rounded-lg">
-          <p className="text-gray-500 text-lg">Không có sản phẩm trong danh mục này</p>
+          <p className="text-gray-500 text-lg">No products in this category</p>
         </div>
       ) : (
         <>
           {/* Products per page selector */}
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm text-gray-600">
-              Hiển thị <span className="font-semibold">{startIndex + 1}</span> - <span className="font-semibold">{Math.min(endIndex, totalProducts)}</span> trong <span className="font-semibold">{totalProducts}</span> sản phẩm
+              Showing <span className="font-semibold">{startIndex + 1}</span> - <span className="font-semibold">{Math.min(endIndex, totalProducts)}</span> of <span className="font-semibold">{totalProducts}</span> products
             </p>
             <div className="flex items-center gap-2">
               <label htmlFor="itemsPerPage" className="text-sm text-gray-600">
-                Sản phẩm/trang:
+                Products per page:
               </label>
               <select
                 id="itemsPerPage"
@@ -216,7 +216,7 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
                 disabled={currentPage === 1}
                 className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
-                ← Trước
+                ← Previous
               </button>
               
               <div className="flex items-center gap-1">
@@ -255,7 +255,7 @@ export function ProductGrid({ selectedCategory, onAddToCart }: ProductGridProps)
                 disabled={currentPage === totalPages}
                 className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
-                Sau →
+                Next →
               </button>
             </div>
           )}

@@ -61,14 +61,14 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
             {product.material}
           </span>
           <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
-            An toàn
+            Safe
           </span>
         </div>
         
         <div className="flex items-center justify-between">
-          <div>
+          <div> 
             <span className=" font-bold text-green-600">
-              {product.price.toLocaleString('vi-VN')}
+               Price: {product.price.toLocaleString('vi-VN')}
             </span>
           </div>
           

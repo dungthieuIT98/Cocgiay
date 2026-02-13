@@ -74,13 +74,13 @@ export function ProductDetailPage() {
       <div className="container mx-auto px-4 py-8">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Không tìm thấy sản phẩm
+            Product not found
           </h2>
           <button
             onClick={() => navigate(-1)}
             className="text-green-600 hover:text-green-700 font-semibold"
           >
-            Quay lại
+            Go back
           </button>
         </div>
       </div>
@@ -95,7 +95,7 @@ export function ProductDetailPage() {
         className="flex items-center gap-2 text-gray-600 hover:text-green-600 mb-6 transition-colors"
       >
         <ArrowLeft size={20} />
-        <span className="font-semibold">Quay lại</span>
+        <span className="font-semibold">Go back</span>
       </button>
       
       <div className="mx-auto max-w-6xl">
@@ -103,15 +103,15 @@ export function ProductDetailPage() {
             
           {/* Product Image */}
           <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden h-full">
-            <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200 h-full">
+            <div className="relative aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 h-full">
               <img
                 src={resolvePublicPath(product.image)}
                 alt={product.name}
-                className="w-5/6 h-auto object-cover transition-transform duration-500 hover:scale-105 mx-auto"
+                className="w-3/4  h-auto object-cover transition-transform duration-500 hover:scale-105 mx-auto"
               />
 
               {/* Soft overlay */}
-              <div className="absolute inset-0 bg-black/5" />
+              {/* <div className="absolute inset-0 bg-black/5" /> */}
 
               {/* Material badge
               <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur">
@@ -138,42 +138,42 @@ export function ProductDetailPage() {
                     />
                   ))}
                 </div>
-                <span className="text-gray-600">(4.5/5 - 128 đánh giá)</span>
+                <span className="text-gray-600">(4.5/5 - 128 reviews)</span>
               </div>
 
               {/* Price */}
               <div className="bg-green-50 rounded-lg p-4 mb-6">
-                <div className="text-sm text-gray-600 mb-1 font-bold">Giá bán</div>
+                <div className="text-sm text-gray-600 mb-1 font-bold">Price</div>
                 <div className="text-4xl font-bold text-green-600">
-                   {product.price.toLocaleString('vi-VN')}
+                   Price: {product.price.toLocaleString('vi-VN')}
                 </div>
               </div>
             </div>
 
             {/* Product Description */}
             <div>
-              <h2 className="text-xl font-bold text-gray-800 mb-3">Mô tả sản phẩm</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Product description</h2>
               <p className="text-gray-700 leading-relaxed">{product.description}</p>
             </div>
 
             {/* Product Specifications */}
             <div>
-              <h2 className="text-xl font-bold text-gray-800 mb-3">Thông số kỹ thuật</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Technical specifications</h2>
               <div className="space-y-3">
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                  <span className="text-gray-600 font-medium">Mã sản phẩm</span>
+                  <span className="text-gray-600 font-medium">Product code</span>
                   <span className="text-gray-800 font-semibold">#{product.id}</span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                  <span className="text-gray-600 font-medium">Chất liệu</span>
+                  <span className="text-gray-600 font-medium">Material</span>
                   <span className="text-gray-800 font-semibold">{product.material}</span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                  <span className="text-gray-600 font-medium">Dung tích</span>
+                  <span className="text-gray-600 font-medium">Capacity</span>
                   <span className="text-gray-800 font-semibold">{product.capacity}</span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                  <span className="text-gray-600 font-medium">Danh mục</span>
+                  <span className="text-gray-600 font-medium">Category</span>
                   <span className="text-gray-800 font-semibold capitalize">
                     {product.category.replace(/-/g, ' ')}
                   </span>
@@ -183,12 +183,12 @@ export function ProductDetailPage() {
 
             {/* Packaging Information */}
             <div>
-              <h2 className="text-xl font-bold text-gray-800 mb-3">Thông tin đóng gói</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Packaging information</h2>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-50 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <Box className="text-green-600" size={20} />
-                    <span className="text-sm text-gray-600 font-medium">Đóng thùng</span>
+                    <span className="text-sm text-gray-600 font-medium">Case pack</span>
                   </div>
                   <div className="text-lg font-bold text-gray-800">
                     {product.Case_Pack}
@@ -197,7 +197,7 @@ export function ProductDetailPage() {
                 <div className="bg-gray-50 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <Package className="text-green-600" size={20} />
-                    <span className="text-sm text-gray-600 font-medium">Đóng gói</span>
+                    <span className="text-sm text-gray-600 font-medium">Pack size</span>
                   </div>
                   <div className="text-lg font-bold text-gray-800">
                     {product.Pack_Size}
@@ -208,29 +208,30 @@ export function ProductDetailPage() {
 
             {/* Features */}
             <div>
-              <h2 className="text-xl font-bold text-gray-800 mb-3">Đặc điểm nổi bật</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Key features</h2>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">An toàn cho sức khỏe</span>
+                  <span className="text-gray-700">Safe for health</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Thân thiện với môi trường</span>
+                  <span className="text-gray-700">Environmentally friendly</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Chất lượng cao, bền đẹp</span>
+                  <span className="text-gray-700">High quality, durable</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Phù hợp cho nhiều mục đích sử dụng</span>
+                  <span className="text-gray-700">Suitable for various purposes</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      <br />
     </div>
   );
 }

@@ -8,10 +8,10 @@ export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const navItems = [
-    { path: '/', label: 'Trang chủ' },
-    { path: '/products/all', label: 'Sản phẩm' },
-    { path: '/services', label: 'Về chúng tôi ' },
-    { path: '/contact', label: 'Liên hệ' },
+    { path: '/', label: 'Home' },
+    { path: '/products/all', label: 'Products' },
+    { path: '/services', label: 'About us' },
+    { path: '/contact', label: 'Contact' },
   ];
 
   const isActive = (path: string) => {
@@ -53,7 +53,7 @@ export function Navigation() {
             </div>
             <div className="group-hover:translate-x-1 transition-transform duration-300">
               <h1 className="text-3xl font-bold">VN PLASTIC SOURCING</h1>
-              <p className="text-green-100 text-sm mt-1">Chất lượng cao - Giá cả hợp lý</p>
+              <p className="text-green-100 text-sm mt-1">High quality - Reasonable prices</p>
             </div>
           </Link>
           

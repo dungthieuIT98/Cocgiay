@@ -52,7 +52,7 @@ export default function Banner() {
     return (
       <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-xl shadow-2xl bg-gray-200 animate-pulse">
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-gray-400">Đang tải...</div>
+          <div className="text-gray-400">Loading...</div>
         </div>
       </div>
     );

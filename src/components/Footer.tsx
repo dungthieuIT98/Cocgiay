@@ -1,16 +1,44 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { loadCSV } from '../utils/csvLoader';
+
+interface Category {
+  id: string;
+  name: string;
+  count: number;
+  parentId: string;
+  image: string;
+}
 
 export function Footer() {
+  const [categories, setCategories] = useState<Category[]>([]);
+
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        const allCategories = await loadCSV<Category>('/data/categories.csv');
+        // Lọc ra các categories chính (parentId = "null" hoặc rỗng) và loại bỏ "all"
+        const mainCategories = allCategories.filter(
+          (cat) => (cat.parentId === 'null' || cat.parentId === '') && cat.id !== 'all'
+        );
+        setCategories(mainCategories);
+      } catch (error) {
+        console.error('Error loading categories:', error);
+      }
+    };
+
+    loadCategories();
+  }, []);
   return (
     <footer className="bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">🥤 Cốc Nhựa Việt</h3>
+            <h3 className="text-2xl font-bold mb-4">🥤 Plastic Cups Vietnam</h3>
             <p className="text-gray-300 mb-4">
-              Đơn vị cung cấp đồ dùng nhất lần chất lượng cao, phục vụ hàng nghìn khách hàng trên toàn quốc.
+              High-quality disposable supplies provider, serving thousands of customers nationwide.
             </p>
             <div className="flex gap-3">
               <a href="#" className="bg-green-600 p-2 rounded-lg hover:bg-green-700 transition-colors">
@@ -27,26 +55,26 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Liên kết nhanh</h4>
+            <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Trang chủ
+                  Home
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Về chúng tôi 
+                  About us
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Liên hệ
+                  Contact
                 </Link>
               </li>
               <li>
                 <Link to="/products/all" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Sản phẩm
+                  Products
                 </Link>
               </li>
             </ul>
@@ -54,34 +82,21 @@ export function Footer() {
 
           {/* Product Categories */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Danh mục sản phẩm</h4>
+            <h4 className="font-bold text-lg mb-4">Product categories</h4>
             <ul className="space-y-2">
-              <li>
-                <Link to="/products/ong-hut-giay" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Ống hút giấy
-                </Link>
-              </li>
-              <li>
-                <Link to="/products/bat-nhua" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Bát nhựa
-                </Link>
-              </li>
-              <li>
-                <Link to="/products/chen-giay" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Chén giấy
-                </Link>
-              </li>
-              <li>
-                <Link to="/products/hop-giay" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Hộp giấy
-                </Link>
-              </li>
+              {categories.map(category => (
+                <li key={category.id}>
+                  <Link to={`/products/${category.id}`} className="text-gray-300 hover:text-green-400 transition-colors">
+                    {category.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Liên hệ</h4>
+            <h4 className="font-bold text-lg mb-4">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin size={20} className="text-green-400 mt-1 flex-shrink-0" />
@@ -106,7 +121,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>&copy; 2026 Cốc Nhựa Việt. Tất cả quyền được bảo lưu.</p>
+          <p>&copy; 2026 Plastic Cups Vietnam. All rights reserved.</p>
         </div>
       </div>
     </footer>

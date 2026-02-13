@@ -1,14 +1,15 @@
 id,name,count,parentId,image
-all,Tất cả sản phẩm,37,,/images/anh_bia/anh_bia_1_.png
-bowl-container,BOWL + CONTAINER,3,,/images/anh_bia/3_container_.png
-paper-cup,PAPER CUP,8,,/images/anh_bia/4_paper_cup.png
-plastic-cup,PLASTIC CUP,0,,/images/anh_bia/1_plastic_cup.png
-plastic-roll,PLASTIC ROLL,2,,/images/anh_bia/7__plastic_roll.png
-plate-tray,PLATE & TRAY,2,,/images/anh_bia/8_plate_+tray.png
-portion-cup,PORTION CUP,1,,/images/anh_bia/5_portion_cup_1-5oz.png
-printed-products,PRINTED PRODUCTS,8,,/images/anh_bia/2_print_cup.png
-straw,STRAW,4,,/images/anh_bia/6_straw_.png
+all,All Products,37,,/images/anh_bia
 
-lid-seal-film,LID & SEAL FILM,4,plastic-cup,
-pet-cup,PET CUP,1,plastic-cup,
-pp-cup,PP CUP,4,plastic-cup,
+plastic-cup,Plastic Cup,0,,/images/anh_bia/1_plastic_cup.png
+printed-products,Printed Products,8,,/images/anh_bia/2_print_cup.png
+bowl-container,Bowl & Container,3,,/images/anh_bia/3_container_.png
+paper-cup,Paper Cup,8,,/images/anh_bia/4_paper_cup.png
+portion-cup,Portion Cup,1,,/images/anh_bia/5_portion_cup_1-5oz.png
+straw,Straw,4,,/images/anh_bia/6_straw_.png
+plastic-roll,Plastic Roll,2,,/images/anh_bia/7__plastic_roll.png
+plate-tray,Plate & Tray,2,,/images/anh_bia/8_plate_+tray.png
+
+lid-seal-film,Lid & Seal Film,4,plastic-cup,
+pet-cup,PET Cup,1,plastic-cup,
+pp-cup,PP Cup,4,plastic-cup,

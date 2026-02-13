@@ -34,7 +34,7 @@ export function Header({ cartItemCount, onCartClick }: HeaderProps) {
             />
             <div>
               <h1 className="text-3xl font-bold">Cốc Nhựa Việt</h1>
-              <p className="text-green-100 text-sm mt-1">Chất lượng cao - Giá cả hợp lý</p>
+              <p className="text-green-100 text-sm mt-1">High quality - Reasonable prices</p>
             </div>
           </div>
           

@@ -1,4 +1,7 @@
 id,name,price,category,description,material,Case_Pack,Pack_Size,capacity,image
+9,Kraft Paper Cup,Contacts,paper-cup,Kraft Paper Cup 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/kraft_paper_cup.png
+15,Ripple Paper Cup,Contacts,paper-cup,Ripple Paper Cup 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/ripple_paper_cup_.png
+16,Single Double Wall Paper Cup,Contacts,paper-cup,Single Double Wall Paper Cup 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/single__double_wall_paper_cup.png
 1,PP Deli Container,Contacts,bowl-container,PP Deli Container 12oz-16oz-24oz-32oz,PP,1000/Case,50pcs/pack,12oz-16oz-24oz-32oz,/images/bowl_container/115-set_pp_deli_container_with_lid-_12oz-16oz-24oz-32oz_.png
 2,PET Deli Container,Contacts,bowl-container,PET Deli Container 12oz-16oz-20oz-24oz-32oz,PET,1000/Case,50pcs/pack,12oz-16oz-20oz-24oz-32oz,/images/bowl_container/117-set_pet_deli_container_(12-16-20-24-32oz)_.png
 3,Black PP Container,Contacts,bowl-container,Black PP Container 12oz-16oz-24oz-32oz,PP,1000/Case,50pcs/pack,12oz-16oz-24oz-32oz,/images/bowl_container/black_pp_container_(with_clear_lid)_.png
@@ -7,14 +10,11 @@ id,name,price,category,description,material,Case_Pack,Pack_Size,capacity,image
 6,Clear Round PP Container,Contacts,bowl-container,Clear Round PP Container 12oz-16oz-24oz-32oz,PP,1000/Case,50pcs/pack,12oz-16oz-24oz-32oz,/images/bowl_container/clear_round_pp_contaier_(with_lid)_.png
 7,Kraft Paper Bowl 500ml-1300ml,Contacts,bowl-container,Kraft Paper Bowl 500ml-750ml-1000ml-1300ml,Paper,1000/Case,50pcs/pack,500ml-750ml-1000ml-1300ml,/images/bowl_container/paper_kraft_bowl_500ml-1300ml_(@150)_.png
 8,Rectangular PP Container Black & Clear,Contacts,bowl-container,Rectangular PP Container Black & Clear 12oz-16oz-24oz-32oz,PP,1000/Case,50pcs/pack,12oz-16oz-24oz-32oz,/images/bowl_container/rectangular_pp_container_(with_lid)-_black&_clear.png
-9,Kraft Paper Cup,Contacts,paper-cup,Kraft Paper Cup 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/kraft_paper_cup.png
 10,Paper Ice Cream Cup,Contacts,paper-cup,Paper Ice Cream Cup 4.5oz-5oz-7oz-8oz -10oz-13oz 16oz-18oz-20oz -220z-320z-36oz,Paper,1000/Case,50pcs/pack,4.5oz-5oz-7oz-8oz -10oz-13oz 16oz-18oz-20oz -220z-320z-36oz,/images/paper_cup/paper_ice_cream_cups.png
 11,Print Paper Bowl,Contacts,paper-cup,Print Paper Bowl 4.5oz-5oz-7oz-8oz -10oz-13oz 16oz-18oz-20oz -220z-320z-36oz,Paper,1000/Case,50pcs/pack,4.5oz-5oz-7oz-8oz -10oz-13oz 16oz-18oz-20oz -220z-320z-36oz,/images/paper_cup/print_paper_bowl.png
 12,Print Paper Bowl With Lid,Contacts,paper-cup,Print Paper Bowl With Lid 4.5oz-5oz-7oz-8oz -10oz-13oz 16oz-18oz-20oz -220z-320z-36oz,Paper,1000/Case,50pcs/pack,4.5oz-5oz-7oz-8oz -10oz-13oz 16oz-18oz-20oz -220z-320z-36oz,/images/paper_cup/print_paper_bowl_with_lid_1.png
 13,Print Paper Cup,Contacts,paper-cup,Print Paper Cup 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/print_paper_cup.png
 14,Print Paper Cup With,Contacts,paper-cup,Print Paper Cup With 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/print_paper_cup_with_.png
-15,Ripple Paper Cup,Contacts,paper-cup,Ripple Paper Cup 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/ripple_paper_cup_.png
-16,Single Double Wall Paper Cup,Contacts,paper-cup,Single Double Wall Paper Cup 4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,Paper,1000/Case,50pcs/pack,4oz-6oz-8oz-9oz-10oz-12oz-14oz-16oz-18oz 20oz-22oz,/images/paper_cup/single__double_wall_paper_cup.png
 17,Artistic Curved Lid,Contacts,lid-seal-film,Artistic Curved Lid Φ98,PP,1000/Case,50pcs/pack,Φ98,/images/plastic_cup/lid_&_seal_fiml/artistic_curved_lid.png
 18,Domed Lid,Contacts,lid-seal-film,"Domed Lid Φ98, Φ95, Φ90, Φ82, Φ117",PP,1000/Case,50pcs/pack,"Φ98, Φ95, Φ90, Φ82, Φ117",/images/plastic_cup/lid_&_seal_fiml/domed_lid.png
 19,Flat Lid,Contacts,lid-seal-film,"Flat Lid Φ98, Φ95, Φ90, Φ82, Φ117, Φ140",PP,1000/Case,50pcs/pack,"Φ98, Φ95, Φ90, Φ82, Φ117, Φ140",/images/plastic_cup/lid_&_seal_fiml/flat_lid.png
@@ -53,3 +53,7 @@ id,name,price,category,description,material,Case_Pack,Pack_Size,capacity,image
 52,Jumbo Straw Plastic Wrapped,Contacts,straw,"Jumbo Straw Plastic Wrapped8.75""",PP,2000/Case,200pcs/pack,"8.75""",/images/straw/jumbo_straw_plastic_wrapped.png
 53,Plastic Flexible Straws 9.75,Contacts,straw,"Plastic Flexible Straws 9.759.75""",PP,4000/Case,400pcs/pack,"9.75""",/images/straw/plastic_flexible_straws-_9.75_.png
 54,Plastic Straw,Contacts,straw,"Plastic Straw9.75""",PP,4000/Case,400pcs/pack,"9.75""",/images/straw/plastic_straw_.png
+55,84-10oz PET Cup,Contacts,pet-cup,84-10oz PET Cup,PET,1000/Case,50pcs/pack,8oz-10oz,/images/plastic_cup/pet_cup/84-10oz_pet_cup_(8oz-10oz).png
+56,93-9oz PET Cup,Contacts,pet-cup,93-9oz PET Cup,PET,1000/Case,50pcs/pack,9oz-12oz,/images/plastic_cup/pet_cup/93-9oz_pet_cup_(9oz-12oz).png
+57,98-16oz PET Cup (1),Contacts,pet-cup,98-16oz PET Cup (1),PET,1000/Case,50pcs/pack,16oz,/images/plastic_cup/pet_cup/98-16oz_pet_cup(1).png
+58,98-32oz PET Cup (1),Contacts,pet-cup,98-32oz PET Cup (1),PET,1000/Case,50pcs/pack,32oz,/images/plastic_cup/pet_cup/98-32oz_pet__cup_-1.png

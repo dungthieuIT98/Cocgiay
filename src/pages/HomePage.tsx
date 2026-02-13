@@ -52,14 +52,14 @@ export function HomePage() {
               to="/products/all"
               className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors inline-flex items-center gap-2"
             >
-              Xem tất cả sản phẩm
+              View all products
               <ChevronRight size={20} />
             </Link>
             <Link
               to="/contact"
               className="bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-800 transition-colors border-2 border-white"
             >
-              Liên hệ báo giá
+              Contact for quote
             </Link>
           </div>
         </div>
@@ -68,9 +68,9 @@ export function HomePage() {
       {/* Categories Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Danh Mục Sản Phẩm</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Product Categories</h2>
           <p className="text-xl text-gray-600">
-            Đa dạng sản phẩm đáp ứng mọi nhu cầu của bạn
+            Diverse products to meet all your needs
           </p>
         </div>
 
@@ -116,27 +116,27 @@ export function HomePage() {
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                 ✓
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Chất lượng cao</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">High quality</h3>
               <p className="text-gray-600">
-                Sản phẩm đạt chuẩn an toàn thực phẩm
+                Products meet food safety standards
               </p>
             </div>
             <div className="text-center">
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                 🚚
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Giao hàng nhanh</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Fast delivery</h3>
               <p className="text-gray-600">
-                Miễn phí vận chuyển đơn hàng trên 500.000đ
+                Free shipping for orders over 500,000 VND
               </p>
             </div>
             <div className="text-center">
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                 💰
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Giá cạnh tranh</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Competitive prices</h3>
               <p className="text-gray-600">
-                Giá tốt nhất thị trường, chiết khấu cao
+                Best market prices, high discounts
               </p>
             </div>
           </div>

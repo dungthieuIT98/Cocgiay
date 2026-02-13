@@ -233,6 +233,11 @@
     height: auto;
   }
 
+  .detail_img{
+    max-width: 80% !important;
+
+  }
+
   button, input, select, optgroup, textarea {
     font: inherit;
     font-feature-settings: inherit;
