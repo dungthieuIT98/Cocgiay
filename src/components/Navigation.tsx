@@ -10,7 +10,7 @@ export function Navigation() {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/products/all', label: 'Products' },
-        { path: '/', label: 'Insight' },
+        { path: '', label: 'Insight' },
     { path: '/services', label: 'About us' },
 
     { path: '/contact', label: 'Contact us' },
