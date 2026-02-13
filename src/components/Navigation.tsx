@@ -10,7 +10,7 @@ export function Navigation() {
   const navItems = [
     { path: '/', label: 'Trang chủ' },
     { path: '/products/all', label: 'Sản phẩm' },
-    { path: '/services', label: 'Dịch vụ' },
+    { path: '/services', label: 'Về chúng tôi ' },
     { path: '/contact', label: 'Liên hệ' },
   ];
 
@@ -26,7 +26,7 @@ export function Navigation() {
           <div className="flex gap-6">
             <div className="flex items-center gap-2">
               <Phone size={14} />
-              <span>whatapps: +84091493394</span>
+              <span>whatsapp: +84 0914.94.33.94</span>
             </div>
             <div className="hidden md:flex items-center gap-2">
               <Mail size={14} />

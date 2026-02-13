@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router';
-import { ShoppingCart, Star, ArrowLeft, Check } from 'lucide-react';
+import { ShoppingCart, Star, ArrowLeft, Check, Package, Layers, Box } from 'lucide-react';
 import type { Product } from '../types';
 import { loadCSV, resolvePublicPath } from '../utils/csvLoader';
 
@@ -97,163 +97,139 @@ export function ProductDetailPage() {
         <ArrowLeft size={20} />
         <span className="font-semibold">Quay lại</span>
       </button>
-     <div className="mx-auto max-w-6xl">
+      
+      <div className="mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
             
-            {/* Product Image */}
-            <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden">
-            
-            <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200">
-                <img
+          {/* Product Image */}
+          <div className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden h-full">
+            <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200 h-full">
+              <img
                 src={resolvePublicPath(product.image)}
                 alt={product.name}
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
+                className="w-5/6 h-auto object-cover transition-transform duration-500 hover:scale-105 mx-auto"
+              />
 
-                {/* Soft overlay */}
-                <div className="absolute inset-0 bg-black/5" />
+              {/* Soft overlay */}
+              <div className="absolute inset-0 bg-black/5" />
 
-                {/* Capacity badge */}
-                {/* <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur">
-                {product.capacity}
-                </div> */}
-            </div>
-            </div>
-        {/* Product Info */}
-        <div className="space-y-6">
-          <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">
-              {product.name}
-            </h1>
-
-            {/* Rating */}
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    size={18}
-                    className="fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-              </div>
-              <span className="text-gray-600">(4.5/5 - 128 đánh giá)</span>
-            </div>
-
-            {/* Price */}
-            <div className="bg-green-50 rounded-lg p-4 mb-6">
-              <div className="text-sm text-gray-600 mb-1">Giá bán</div>
-              <div className="text-4xl font-bold text-green-600">
-                {product.price.toLocaleString('vi-VN')}đ
-              </div>
+              {/* Material badge
+              <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur">
+                {product.material}
+              </div> */}
             </div>
           </div>
 
-          {/* Product Description */}
-          <div>
-            <h2 className="text-xl font-bold text-gray-800 mb-3">Mô tả sản phẩm</h2>
-            <p className="text-gray-700 leading-relaxed">{product.description}</p>
-          </div>
-
-          {/* Product Specifications */}
-          <div>
-            <h2 className="text-xl font-bold text-gray-800 mb-3">Thông số kỹ thuật</h2>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                <span className="text-gray-600 font-medium">Chất liệu</span>
-                <span className="text-gray-800 font-semibold">{product.material}</span>
-              </div>
-              <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                <span className="text-gray-600 font-medium">Dung tích</span>
-                <span className="text-gray-800 font-semibold">{product.capacity}</span>
-              </div>
-              <div className="flex items-center justify-between py-3 border-b border-gray-200">
-                <span className="text-gray-600 font-medium">Danh mục</span>
-                <span className="text-gray-800 font-semibold capitalize">
-                  {product.category.replace(/-/g, ' ')}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Features */}
-          <div>
-            <h2 className="text-xl font-bold text-gray-800 mb-3">Đặc điểm nổi bật</h2>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2">
-                <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-700">An toàn cho sức khỏe</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-700">Thân thiện với môi trường</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-700">Chất lượng cao, bền đẹp</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-700">Phù hợp cho nhiều mục đích sử dụng</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Add to Cart */}
-          {/* <div className="bg-gray-50 rounded-lg p-6 space-y-4">
+          {/* Product Info */}
+          <div className="space-y-6 h-full max-h-[36rem] overflow-y-auto">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Số lượng
-              </label>
-              <div className="flex items-center gap-4">
-                <button
-                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="w-10 h-10 rounded-lg bg-white border border-gray-300 hover:bg-gray-50 font-semibold text-gray-700 transition-colors"
-                >
-                  -
-                </button>
-                <span className="text-xl font-semibold text-gray-800 w-12 text-center">
-                  {quantity}
-                </span>
-                <button
-                  onClick={() => setQuantity(quantity + 1)}
-                  className="w-10 h-10 rounded-lg bg-white border border-gray-300 hover:bg-gray-50 font-semibold text-gray-700 transition-colors"
-                >
-                  +
-                </button>
+              <h1 className="text-3xl font-bold text-gray-800 mb-3">
+                {product.name}
+              </h1>
+
+              {/* Rating */}
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      size={18}
+                      className="fill-yellow-400 text-yellow-400"
+                    />
+                  ))}
+                </div>
+                <span className="text-gray-600">(4.5/5 - 128 đánh giá)</span>
+              </div>
+
+              {/* Price */}
+              <div className="bg-green-50 rounded-lg p-4 mb-6">
+                <div className="text-sm text-gray-600 mb-1 font-bold">Giá bán</div>
+                <div className="text-4xl font-bold text-green-600">
+                   {product.price.toLocaleString('vi-VN')}
+                </div>
               </div>
             </div>
 
-            <button
-              onClick={handleAddToCart}
-              className={`w-full py-4 rounded-lg flex items-center justify-center gap-3 font-semibold text-lg transition-all ${
-                addedToCart
-                  ? 'bg-green-500 text-white'
-                  : 'bg-green-600 hover:bg-green-700 text-white'
-              }`}
-            >
-              {addedToCart ? (
-                <>
-                  <Check size={24} />
-                  <span>Đã thêm vào giỏ hàng</span>
-                </>
-              ) : (
-                <>
-                  <ShoppingCart size={24} />
-                  <span>Thêm vào giỏ hàng</span>
-                </>
-              )}
-            </button>
-
-            <div className="text-center text-sm text-gray-600">
-              Tổng tiền:{' '}
-              <span className="text-xl font-bold text-green-600">
-                {(product.price * quantity).toLocaleString('vi-VN')}đ
-              </span>
+            {/* Product Description */}
+            <div>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Mô tả sản phẩm</h2>
+              <p className="text-gray-700 leading-relaxed">{product.description}</p>
             </div>
-          </div> */}
+
+            {/* Product Specifications */}
+            <div>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Thông số kỹ thuật</h2>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                  <span className="text-gray-600 font-medium">Mã sản phẩm</span>
+                  <span className="text-gray-800 font-semibold">#{product.id}</span>
+                </div>
+                <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                  <span className="text-gray-600 font-medium">Chất liệu</span>
+                  <span className="text-gray-800 font-semibold">{product.material}</span>
+                </div>
+                <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                  <span className="text-gray-600 font-medium">Dung tích</span>
+                  <span className="text-gray-800 font-semibold">{product.capacity}</span>
+                </div>
+                <div className="flex items-center justify-between py-3 border-b border-gray-200">
+                  <span className="text-gray-600 font-medium">Danh mục</span>
+                  <span className="text-gray-800 font-semibold capitalize">
+                    {product.category.replace(/-/g, ' ')}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Packaging Information */}
+            <div>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Thông tin đóng gói</h2>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Box className="text-green-600" size={20} />
+                    <span className="text-sm text-gray-600 font-medium">Đóng thùng</span>
+                  </div>
+                  <div className="text-lg font-bold text-gray-800">
+                    {product.Case_Pack}
+                  </div>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Package className="text-green-600" size={20} />
+                    <span className="text-sm text-gray-600 font-medium">Đóng gói</span>
+                  </div>
+                  <div className="text-lg font-bold text-gray-800">
+                    {product.Pack_Size}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Features */}
+            <div>
+              <h2 className="text-xl font-bold text-gray-800 mb-3">Đặc điểm nổi bật</h2>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2">
+                  <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">An toàn cho sức khỏe</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Thân thiện với môi trường</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Chất lượng cao, bền đẹp</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Phù hợp cho nhiều mục đích sử dụng</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

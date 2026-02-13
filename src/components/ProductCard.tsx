@@ -31,9 +31,9 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-300"
         />
-        <div className="absolute top-2 right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+        {/* <div className="absolute top-2 right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
           {product.capacity}
-        </div>
+        </div> */}
       </div>
       
       <div className="p-4">
@@ -67,18 +67,18 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
         
         <div className="flex items-center justify-between">
           <div>
-            <span className="text-2xl font-bold text-green-600">
-              {product.price.toLocaleString('vi-VN')}đ
+            <span className=" font-bold text-green-600">
+              {product.price.toLocaleString('vi-VN')}
             </span>
           </div>
           
-          <button
+          {/* <button
             onClick={handleAddToCart}
             className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
           >
             <ShoppingCart size={18} />
             <span className="font-semibold">Thêm</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@ export function Footer() {
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Dịch vụ
+                  Về chúng tôi 
                 </Link>
               </li>
               <li>
@@ -86,13 +86,13 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin size={20} className="text-green-400 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  37 DC 13-Tây thạnh tân phú-TPHCM
+                 37 DC 13 Street - Tan Binh Industrial Park - Tay Thanh Ward - Tan Phu District - Ho Chi Minh City
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={20} className="text-green-400 flex-shrink-0" />
                 <a href="tel:0123456789" className="text-gray-300 hover:text-green-400 transition-colors">
-                  whatapps: +84091493394
+                  whatsapp: +84 0914.94.33.94
                 </a>
               </li>
               <li className="flex items-center gap-2">

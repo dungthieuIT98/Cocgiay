@@ -1,4 +1,4 @@
-id,name,price,category,description,material,Case Pack,Pack Size,capacity,image
+id,name,price,category,description,material,Case_Pack,Pack_Size,capacity,image
 1,PP Deli Container,Contacts,bowl-container,PP Deli Container 12oz-16oz-24oz-32oz,PP,1000/Case,50pcs/pack,12oz-16oz-24oz-32oz,/images/bowl_container/115-set_pp_deli_container_with_lid-_12oz-16oz-24oz-32oz_.png
 2,PET Deli Container,Contacts,bowl-container,PET Deli Container 12oz-16oz-20oz-24oz-32oz,PET,1000/Case,50pcs/pack,12oz-16oz-20oz-24oz-32oz,/images/bowl_container/117-set_pet_deli_container_(12-16-20-24-32oz)_.png
 3,Black PP Container,Contacts,bowl-container,Black PP Container 12oz-16oz-24oz-32oz,PP,1000/Case,50pcs/pack,12oz-16oz-24oz-32oz,/images/bowl_container/black_pp_container_(with_clear_lid)_.png

@@ -44,7 +44,7 @@ export function ContactPage() {
               <input
                 type="tel"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-                placeholder="whatapps: +84091493394"
+                placeholder="whatsapp: +84 0914.94.33.94"
               />
             </div>
             
@@ -81,7 +81,7 @@ export function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Điện thoại</h3>
-                  <p className="text-gray-600">whatapps: +84091493394</p>
+                  <p className="text-gray-600">whatsapp: +84 0914.94.33.94</p>
                 </div>
               </div>
               
@@ -102,9 +102,8 @@ export function ContactPage() {
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Địa chỉ</h3>
                   <p className="text-gray-600">
-                    37 DC 13- Tây Thạch<br />
-                    Tân Phú, TP. Hồ Chí Minh
-                  </p>
+                   37 DC 13 Street - Tan Binh Industrial Park - Tay Thanh Ward<br />
+                    Tan Phu District - Ho Chi Minh City      </p>
                 </div>
               </div>
               
