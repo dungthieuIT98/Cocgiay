@@ -8,7 +8,7 @@
   // - Nếu repo có tên khác (vd: cocgiay): base: '/cocgiay/'
   // Xem chi tiết trong DEPLOYMENT.md
   export default defineConfig(({ mode }) => ({
-    base: mode === 'production' ? '/Cocgiay/' : '/',
+    // base: mode === 'production' ? '/Cocgiay/' : '/',
     plugins: [
       react(),
       {
