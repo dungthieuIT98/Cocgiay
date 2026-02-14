@@ -36,20 +36,16 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">🥤 Plastic Cups Vietnam</h3>
+            <h3 className="text-2xl font-bold mb-4">VN PLASTIC SOURCING</h3>
             <p className="text-gray-300 mb-4">
               High-quality disposable supplies provider, serving thousands of customers nationwide.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="bg-green-600 p-2 rounded-lg hover:bg-green-700 transition-colors">
-                <Facebook size={20} />
+            
+              {/* <a href="#" className="bg-green-600 p-2 rounded-lg hover:bg-green-700 transition-colors">
+                <Phone size={20} />
               </a>
-              <a href="#" className="bg-green-600 p-2 rounded-lg hover:bg-green-700 transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="bg-green-600 p-2 rounded-lg hover:bg-green-700 transition-colors">
-                <Youtube size={20} />
-              </a>
+             */}
             </div>
           </div>
 

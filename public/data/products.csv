@@ -28,9 +28,9 @@ id,name,price,category,description,material,Case_Pack,Pack_Size,capacity,image
 27,7oz Striped Cup,Contacts,pp-cup,7oz Striped Cup (140ml-220ml-280ml-330ml -400ml-500ml-700ml),PP,1000/Case,50pcs/pack,140ml-220ml-280ml-330ml -400ml-500ml-700ml,/images/plastic_cup/pp_cup/7oz_striped_cup.png_(140_ml_-_700ml).png
 28,90-PP Cup 16oz-22oz,Contacts,pp-cup,90-PP Cup 16oz-22oz16oz-18oz-20oz-220z,PP,1000/Case,50pcs/pack,16oz-18oz-20oz-220z,/images/plastic_cup/pp_cup/90-_pp_cup_16oz-22oz_.png
 29,95-PP Cup 360ml-700ml,Contacts,pp-cup,95-PP Cup 300ml-360ml-400ml-480ml-500ml- 600ml-700ml,PP,1000/Case,50pcs/pack,300ml-360ml-400ml-480ml-500ml- 600ml-700ml,/images/plastic_cup/pp_cup/95-pp_cup_360ml-500ml_-700ml_.png
-30,95-U Cup Clear 360ml-700ml,Contacts,pp-cup,95-U Cup Clear 360ml-500ml-700ml,PP,1000/Case,50pcs/pack,360ml-500ml-700ml,/images/plastic_cup/pp_cup/95-u_cup
-31,U Cup Matte 700ml,Contacts,pp-cup,U Cup Matte 700ml,PP,1000/Case,50pcs/pack,700ml,/images/plastic_cup/pp_cup/u_cup
-32,U Cup Matte U500-U700,Contacts,pp-cup,U Cup Matte U500-U700,PP,1000/Case,50pcs/pack,500-700ml,/images/plastic_cup/pp_cup/u_cup_matte
+30,95-U Cup Clear 360ml-700ml,Contacts,pp-cup,95-U Cup Clear 360ml-500ml-700ml,PP,1000/Case,50pcs/pack,360ml-500ml-700ml,/images/plastic_cup/pp_cup/95-u_cup_clear_360ml-_500ml_-700ml_
+31,U Cup Matte 700ml,Contacts,pp-cup,U Cup Matte 700ml,PP,1000/Case,50pcs/pack,700ml,/images/plastic_cup/pp_cup/u_cup_matte_700ml_.png
+32,U Cup Matte U500-U700,Contacts,pp-cup,U Cup Matte U500-U700,PP,1000/Case,50pcs/pack,500-700ml,/images/plastic_cup/pp_cup/u_cup_matte_u500-u700.png
 33,Roll Trash Bags,Contacts,plastic-roll,Roll Trash Bags 30mic-35mic,PE,1000/Case,50pcs/pack,30mic-35mic,/images/plastic_roll/roll_trash_bags.png
 34,Vegetable Roll Bag,Contacts,plastic-roll,Vegetable Roll Bag12mic-13mic -15mic,PE,1000/Case,50pcs/pack,12mic-13mic -15mic,/images/plastic_roll/vegetable_roll_bag_.png
 35,Paper Tray,Contacts,plate-tray,"Paper Tray 9""",Paper,1000/Case,50pcs/pack,"9""",/images/plate_&tray/paper_tray.png

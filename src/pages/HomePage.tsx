@@ -118,8 +118,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">High quality</h3>
               <p className="text-gray-600">
-                Products meet food safety standards
-              </p>
+High-quality products, customized to your requirements.              </p>
             </div>
             <div className="text-center">
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
@@ -127,7 +126,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Fast delivery</h3>
               <p className="text-gray-600">
-                We offer reliable shipping services 24/7 to meet your needs.
+Fast and on-time delivery.
               </p>
             </div>
             <div className="text-center">
@@ -136,7 +135,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Competitive prices</h3>
               <p className="text-gray-600">
-                Best market prices, high discounts
+Good price, flexible MOQ.
               </p>
             </div>
           </div>
