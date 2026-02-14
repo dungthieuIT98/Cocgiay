@@ -142,11 +142,11 @@ export function ContactPage() {
                   <div>
 
                     <h3 className="font-bold text-gray-800">
-                      Phone
+                      WhatsApp
                     </h3>
 
                     <p className="text-gray-600">
-                      WhatsApp: +84 0914 94 33 94
+                      +84 0914 94 33 94
                     </p>
 
                   </div>
