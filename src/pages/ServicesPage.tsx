@@ -11,6 +11,12 @@ export function ServicesPage() {
         <p style={{ fontSize: '14px', color: '#888', marginTop: '10px', fontStyle: 'italic' }}>
           We are not a factory. We are your independent sourcing partner on the ground — representing your commercial interest.
         </p>
+        <p style={{ fontSize: '15px', color: '#555', marginTop: '20px', lineHeight: '1.8' }}>
+          We specialize in plastic cup sourcing, cup printing services, vegetable packaging rolls,
+          and trash bag rolls manufacturing for export markets. Our role is to act as an independent
+          sourcing partner — not tied to a single factory — ensuring transparency, cost benchmarking,
+          and production consistency.
+        </p>
       </header>
 
       <section style={{ marginBottom: '50px' }}>
@@ -71,6 +77,9 @@ export function ServicesPage() {
       <footer style={{ textAlign: 'center', marginTop: '60px', padding: '30px', backgroundColor: '#f5f5f5' }}>
         <p style={{ fontSize: '18px', fontWeight: 'bold', color: '#1a1a1a' }}>
           You focus on developing the market. We help you control sourcing in Vietnam.
+        </p>
+        <p style={{ fontSize: '16px', color: '#555', marginTop: '15px' }}>
+          Contact us today to discuss your plastic cup, cup printing, vegetable roll, or trash roll supply needs.
         </p>
       </footer>
 
